@@ -805,6 +805,24 @@ ul li a:hover + .brodr{
         font-size: 9px;       
     }
 
+    .checkbtn{
+        display:block;
+     }
+    .list {
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align: center;
+     } 
+    .list li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+     }
+
 
     .container{
         padding-left: 20px;
