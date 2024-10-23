@@ -44,13 +44,26 @@ nav{
 ul li{
     list-style: none;
     font-size: 12px;
-   font-family:  "Montserrat", sans-serif;
+    font-family:  "Montserrat", sans-serif;
    
 }
 
 ul li a{
     text-decoration: none;
     color:#EDEDEE;
+}
+
+.checkbtn{
+    font-size:30px;
+    color:red;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
 }
 
 .brodr{
@@ -127,9 +140,7 @@ ul li a:hover + .brodr{
     line-height:60px;
     padding-top:20px;
     font-weight: bold;
-    margin-bottom: 22px;
-   
-   
+    margin-bottom: 22px;  
 }
 
 .descrpt p{
@@ -165,7 +176,7 @@ ul li a:hover + .brodr{
     position:absolute;
     width:500px;
     height:500px;
-    background: conic-gradient(transparent,transparent,transparent,#7cf030,#ae2caa,#ea9330);
+    background: conic-gradient(transparent,transparent,transparent,#7cf030);
     transform: rotate(0deg);
     animation:rot-bor 10s linear infinite ;
 }
@@ -789,6 +800,12 @@ ul li a:hover + .brodr{
     .logo-content img {
         padding: 10px;
     }
+
+    .list li{   
+        font-size: 9px;       
+    }
+
+
     .container{
         padding-left: 20px;
         width:100%;
@@ -796,8 +813,8 @@ ul li a:hover + .brodr{
 
     .descrpt h6{
        
-        font-size: 14px;
-        font-weight:100; 
+        font-size: 16px;
+        font-weight:200; 
     }
    
     .descrpt h1{
@@ -810,10 +827,13 @@ ul li a:hover + .brodr{
     }
     
     .descrpt p{
-        line-height: 25px;
-        font-size: 14px;
+        line-height: 30px;
+        font-size: 16px;
         width:100%;
         opacity:0.8;   
+    }
+    .home-img{
+        padding-right:20px;
     }
 
     .img-box .img-item img {
@@ -828,8 +848,8 @@ ul li a:hover + .brodr{
     
     .social-share{
         padding-top:10px;
-        font-size: 12px;
-        font-weight:200;    
+        font-size: 14px;
+        font-weight:400;    
     }
 
     .socialmedia{
@@ -845,8 +865,8 @@ ul li a:hover + .brodr{
 
     .skills{
         padding-top:20px;
-        font-size: 12px;
-        font-weight:200;    
+        font-size: 14px;
+        font-weight:400;    
     }
 
     .skilmedia{
@@ -858,11 +878,8 @@ ul li a:hover + .brodr{
         margin-top:20px;
     }
 
-
-
-
     .grid-main{
-        padding-left: 20px;
+        padding-left: 10px;
         margin-top: 50px;
         
     }
@@ -875,19 +892,21 @@ ul li a:hover + .brodr{
 
     .grid-feat {
        
-        padding-left: 20px;
-        margin-left: 40px;
+        padding-left: 0px;
+        margin-left: 20px;
+        width:110%;
     }
 
 
     .grid-main h5{
         text-align: center;
-        font-weight: 400;
+        font-weight: 500;
+        font-size:20px;
     }
 
     .grid-main h6{
-        font-size:40px;
-        font-weight: 300;
+        font-size:50px;
+        font-weight: 500;
         margin-bottom: 30px;
         text-align: center;
     }
@@ -898,16 +917,16 @@ ul li a:hover + .brodr{
 
     .grid-feat ul li h1{
         letter-spacing: 2px;
-        font-weight:300;
+        font-weight:600;
         font-size:20px;
         padding-top:10px;
     }
 
     .grid-feat ul li p{
         padding-top:10px;
-        line-height: 20px;
-        font-size: 12px;
-        opacity:1; 
+        line-height: 25px;
+        font-size: 18px;
+        opacity:0.8; 
         padding-bottom:10px;  
     }
 
@@ -916,64 +935,71 @@ ul li a:hover + .brodr{
     
     }
 
-      .resume-container h5{
-        font-size: 14px;
-        font-weight: 300;  
+    .resume-container h5{
+        font-size: 18px;
+        font-weight: 500;  
         line-height: 10px;     
         margin-top:50px;
     }
     
     .resume-container h2{
-        font-size: 25px;
-        font-weight: 600;
+        font-size: 35px;
+        font-weight: 700;
+        padding-bottom:40px;
     }
     
     .edu-pref{
-        width:90%;
-        height:35vh; 
+        width:100%;
+        height:25vh; 
         padding-left:10px;  
     }
     
     .edu{
-       
-        margin-top: 25px;
-        font-size: 14px;
+        width:33%;
+        margin-top: 50px;
+        font-size: 18px;
         padding-left:20px;
-      
+       font-weight:400;
     }
   
     .edu p{ 
-        font-weight: 400;
+        font-weight: 500;
         height:10px;
         line-height:12px;
-        font-size: 12px;
+        font-size: 16px;
         margin-top:25px;
     }
     
     .prfskill{   
-        margin-top: 25px;
-        font-size: 14px;
+        width:33%;
+        margin-top: 50px;
+        font-size: 18px;
         padding-left:20px;
+        font-weight:400;
+       
     }
     
     .prfskill p{
-        font-weight: 400;
+        font-weight: 500;
         height:10px;
         line-height:12px;
-        font-size: 12px;
+        font-size: 16px;
         margin-top:25px;
     
     }  
     .expr{ 
-          margin-top: 25px;
-        font-size: 14px;
+        width:33%;
+          margin-top: 50px;
+        font-size: 18px;
         padding-left:20px;
+        font-weight:400;
+        
      }
     
     .expr p{
-        font-weight: 400;
+        font-weight: 500;
         line-height:12px;
-        font-size: 12px;
+        font-size: 16px;
         margin-top:25px;
     
     }
@@ -989,42 +1015,51 @@ ul li a:hover + .brodr{
 
 
     .contact-content h5{
-        font-weight: 400;  
+        font-weight: 500; 
+        font-size:18px; 
         line-height: 10px;
-        margin-top:30px;
+        margin-top:50px;
     }
     
     .contact-content h2{
-        font-size: 25px;
-        font-weight: 500;
+        font-size: 35px;
+        font-weight: 600;
+        margin-bottom:30px;
     }
 
     .contact-flex{
         width: 100%;
-        padding-left: 30px;   
+        padding-left: 10px;   
     } 
     
     .contact-ti{
-        margin-top:0px;
+        margin-top:30px;
         margin-right:50px;
         height:auto;
     }
     
     .contact-ti h5{
-        font-size: 20px;
+        font-size: 26px;
         line-height:30px; 
+        margin-top:-30px;
+        font-weight:300;
     }
     
     .contact-ti p.sa{
-        line-height: 30px;
-        font-size:16px;
+        line-height: 50px;
+        font-size:22px;
+        font-weight:500;
     }
     .contact-ti p.ct{
-         font-size:14px;
+         font-size:18px;
+         font-weight:300;
+    
     }
 
     .contact-ti p{
-        font-size:14px;
+        font-size:18px;
+        line-height:28px;
+        letter-spacing: 1px;
    }
        
     .contact-ti img{
@@ -1034,7 +1069,7 @@ ul li a:hover + .brodr{
       
     .contact-ti p.fm{
            margin-top: 20px;
-          font-size: 13px;
+          font-size: px;
     }
 
     .contact-media{ 
@@ -1051,8 +1086,8 @@ ul li a:hover + .brodr{
 
     
     .contact-form label{
-        font-size: 12px;
-        font-weight: 300;
+        font-size: 16px;
+        font-weight: 400;
         margin-bottom: 10px;
         margin-top: 5px;
     }
@@ -1068,19 +1103,19 @@ ul li a:hover + .brodr{
     .contact-form textarea{
         height: 200px;
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 16px;
         line-height: 12px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
     .bttn{
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         height:40px;
     }      
     .footer{ 
         margin-top: 30px;  
-        font-size: 14px;
+        font-size: 20px;
         margin-bottom:20px;
     }
     
@@ -1095,7 +1130,7 @@ ul li a:hover + .brodr{
     nav{
         width:100%;
     }
-
+    
     .logo-content img{
         height: auto;
         max-width:100%;      
@@ -1103,34 +1138,52 @@ ul li a:hover + .brodr{
         padding:10px;
         margin-top:10px;     
     }
-    
-    .list{
-        width:80%;  
-    }
-    
-    .list li{   
-        font-size: 8px;       
-    }
+ 
 
     .buttn{     
         height:10px;
         border-radius: 3px;
         box-shadow: 5px 5px 10px #1c1e22, -5px -5px 10px #262a2e;
      }
+     .checkbtn{
+        display:block;
+     }
+    .list {
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background:#2c3e50;
+        top:80px;
+        left:-100%;
+        text-align: center;
+     } 
+    .list li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+     }
+     
+    /*ul li a:hover{
+        background: none;
+        color:#0082e6;
+     }/*
+     #check:checked ~ ul{
+        left:0;
+     }*/
+
     .container{
         padding-left: 20px;
-        width:90%;
+        width:100%;
         flex-direction:column-reverse;
     }
 
     .descrpt h6{
-       
+       width:100%;
         font-size: 14px;
-        font-weight:100; 
+        font-weight:500; 
     }
    
     .descrpt h1{
-     
         font-size: 20px;
         line-height:40px;
         padding-top:10px;
@@ -1140,7 +1193,7 @@ ul li a:hover + .brodr{
     
     .descrpt p{
         line-height: 25px;
-        font-size: 12px;
+        font-size: 14px;
         width:100%;
         opacity:0.8;   
     }
@@ -1153,8 +1206,8 @@ ul li a:hover + .brodr{
 
     .social-share{
         padding-top:20px;
-        font-size: 12px;
-        font-weight:200;    
+        font-size: 14px;
+        font-weight:300;    
     }
 
     .socialmedia{
@@ -1169,8 +1222,8 @@ ul li a:hover + .brodr{
     }
     .skills{
         padding-top:20px;
-        font-size: 12px;
-        font-weight:200;    
+        font-size: 14px;
+        font-weight:300;    
     }
 
     .skilmedia{
@@ -1183,37 +1236,33 @@ ul li a:hover + .brodr{
     }
 
     .img-box{
-    
+        margin-top:30px;
         width:30vw;
-        height:30vw;
-       
+        height:30vw; 
     }
 
     .img-box .img-item img{
         top:15px;
     }
     
-
     .grid-main{
          padding-left: 20px;
-        margin-top: 30px;
-        
+        margin-top: 30px;   
     }
     .grid-main h5{
         text-align: center;
-        font-weight: 200;
+        font-weight: 400;
     }
 
     .grid-main h6{
         font-size:30px;
-        font-weight: 300;
+        font-weight: 500;
         margin-bottom: 30px;
         text-align: center;
     }
 
     .grid{
         grid-template-columns:repeat(1,1fr);
-      
         width:90%;  
         height:auto;       
     }
@@ -1230,7 +1279,7 @@ ul li a:hover + .brodr{
 
     .grid-feat ul li h1{
         letter-spacing: 2px;
-        font-weight4300;
+        font-weight:400;
         font-size:20px;
         padding-top:10px;
     }
@@ -1238,8 +1287,8 @@ ul li a:hover + .brodr{
     .grid-feat ul li p{
         padding-top:10px;
         line-height: 20px;
-        font-size: 12px;
-        opacity:1; 
+        font-size: 14px;
+        opacity:0.8; 
         padding-bottom:10px;  
     }
 
@@ -1249,19 +1298,19 @@ ul li a:hover + .brodr{
     }
 
     .resume-container h5{
-        font-size: 12px;
-        font-weight: 400;  
+        font-size: 14px;
+        font-weight: 500;  
         line-height: 10px;     
         margin-top:50px;
     }
     
     .resume-container h2{
         font-size: 25px;
-        font-weight: 400;
+        font-weight: 500;
     }
     
     .edu-pref{
-        width:90%;
+        width:100%;
         height:35vh; 
         padding-left:10px;  
     }
@@ -1269,13 +1318,13 @@ ul li a:hover + .brodr{
     .edu{
        
         margin-top: 25px;
-        font-size: 12px;
+        font-size: 14px;
         padding-left:10px;
       
     }
   
     .edu p{ 
-        font-weight: 200;
+        font-weight: 300;
         height:10px;
         line-height:12px;
         font-size: 12px;
@@ -1284,12 +1333,12 @@ ul li a:hover + .brodr{
     
     .prfskill{   
         margin-top: 25px;
-        font-size: 12px;
+        font-size: 14px;
         padding-left:20px;
     }
     
     .prfskill p{
-        font-weight: 200;
+        font-weight: 300;
         height:10px;
         line-height:12px ;
         font-size: 12px;
@@ -1298,12 +1347,12 @@ ul li a:hover + .brodr{
     }  
     .expr{ 
           margin-top: 25px;
-        font-size: 12px;
+        font-size: 14px;
         padding-left:20px;
      }
     
     .expr p{
-        font-weight: 200;
+        font-weight: 300;
         line-height:12px ;
         font-size: 12px;
         margin-top:25px;
@@ -1311,21 +1360,20 @@ ul li a:hover + .brodr{
     }
 
     .contact-content h5{
-        font-weight: 400;  
+        font-weight: 600;  
         line-height: 10px;
         margin-top:30px;
     }
     
     .contact-content h2{
-        font-size: 20px;
-        font-weight: 500;
+        font-size: 25px;
+        font-weight: 600;
     }
 
     .contact-flex{
         width: 100%;
         padding-left: 30px;   
         flex-direction: column-reverse;  
-       
     } 
     
     .contact-ti{
@@ -1336,16 +1384,16 @@ ul li a:hover + .brodr{
     }
     
     .contact-ti h5{
-        font-size: 15px;
+        font-size: 20px;
         line-height:30px; 
     }
     
     .contact-ti p.sa{
         line-height: 30px;
-        font-size:14px;
+        font-size:16px;
     }
     .contact-ti p.ct{
-         font-size:12px;
+         font-size:14px;
     }
 
     .contact-ti p{
@@ -1359,7 +1407,7 @@ ul li a:hover + .brodr{
       
     .contact-ti p.fm{
            margin-top: 20px;
-          font-size: 14px;
+          font-size: 16px;
     }
 
     .contact-media{ 
@@ -1376,8 +1424,8 @@ ul li a:hover + .brodr{
 
     
     .contact-form label{
-        font-size: 10px;
-        font-weight: 300;
+        font-size: 14px;
+        font-weight: 400;
         margin-bottom: 10px;
         margin-top: 5px;
     }
@@ -1387,25 +1435,25 @@ ul li a:hover + .brodr{
         margin-bottom: 10px;;
         height: 40px;
         padding: 0 10px;
-        font-size: 10px;
+        font-size: 12px;
    }
 
     .contact-form textarea{
         height: 200px;
         padding: 5px 10px;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px;
         margin-bottom: 10px;
         margin-top: 10px;
     }
     .bttn{
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 600;
         height:40px;
     }      
     .footer{ 
         margin-top: 30px;  
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom:20px;
     }
     
