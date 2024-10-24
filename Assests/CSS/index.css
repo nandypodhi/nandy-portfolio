@@ -350,7 +350,7 @@ ul li a:hover + .brodr{
     height:auto;
      padding-left: 20px;
     margin-left:100px;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    box-shadow: 10px 10px 19px #0e010aba, -10px -10px 19px #0c0d0f;
     border-radius:10px;
     justify-items: left;
     
@@ -725,7 +725,7 @@ ul li a:hover + .brodr{
     padding: 0 15px;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
-    color: #a0a8b3;
+    color: white;
     box-shadow:  1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     letter-spacing: 1px;
 }
@@ -740,7 +740,7 @@ ul li a:hover + .brodr{
     font-size: 14px;
     line-height: 18px;
     font-family: "Montserrat", sans-serif;
-    color: #a0a8b3;
+    color: white;
     box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
     letter-spacing: 1px;
     resize: none;
@@ -802,27 +802,8 @@ ul li a:hover + .brodr{
     }
 
     .list li{   
-        font-size: 9px;       
+        font-size: 10px;       
     }
-
-    .checkbtn{
-        display:block;
-     }
-    .list {
-        position: fixed;
-        width:100%;
-        height:100vh;
-        background:#2c3e50;
-        top:80px;
-        left:-100%;
-        text-align: center;
-     } 
-    .list li{
-        display:block;
-        margin:50px 0;
-        line-height:30px;
-     }
-
 
     .container{
         padding-left: 20px;
@@ -899,13 +880,12 @@ ul li a:hover + .brodr{
     .grid-main{
         padding-left: 10px;
         margin-top: 50px;
-        
     }
 
     .grid {
         grid-template-columns: repeat(2,1fr);
-        column-gap: 10px;
-        row-gap: 20px;
+        column-gap: 60px;
+        row-gap: 40px;
     }
 
     .grid-feat {
@@ -950,7 +930,6 @@ ul li a:hover + .brodr{
 
     .font-st{
        font-size:15px;
-    
     }
 
     .resume-container h5{
@@ -1022,10 +1001,11 @@ ul li a:hover + .brodr{
     
     }
 
-    /*.contact-flex {
+    .contact-flex {
       
         padding-left: 20px;
-    }*/
+        width:100%;
+    }
 
     .contact-form{
         width:90%;        
@@ -1054,12 +1034,13 @@ ul li a:hover + .brodr{
         margin-top:30px;
         margin-right:50px;
         height:auto;
+        width:50%;
     }
     
     .contact-ti h5{
         font-size: 26px;
         line-height:30px; 
-        margin-top:-30px;
+        margin-top:-0px;
         font-weight:300;
     }
     
@@ -1082,22 +1063,25 @@ ul li a:hover + .brodr{
        
     .contact-ti img{
         width:300px;
-        height:300px;    
+        height:300px;   
+        object-fit: cover; 
     }  
       
     .contact-ti p.fm{
            margin-top: 20px;
-          font-size: px;
+          font-size: 14px;
     }
 
     .contact-media{ 
-        width: 70%;
-        gap: 10px;   
+        width: 60%;
+        gap: 30px;
+        padding-left:60px;   
     }
     
     .contact-form{
         margin-top: 30px;
         width:100%;
+        height:75vh;
         padding: 20px;
         margin-right:0px;   
     }    
@@ -1119,7 +1103,7 @@ ul li a:hover + .brodr{
    }
 
     .contact-form textarea{
-        height: 200px;
+        height: 253px;
         padding: 5px 10px;
         font-size: 16px;
         line-height: 12px;
@@ -1145,8 +1129,14 @@ ul li a:hover + .brodr{
 
 
 @media(max-width:600px){
+
+    /*body{
+        overflow:hidden;
+    }*/
+
+
     nav{
-        width:100%;
+        width:90%;
     }
     
     .logo-content img{
@@ -1157,15 +1147,16 @@ ul li a:hover + .brodr{
         margin-top:10px;     
     }
  
-
     .buttn{     
         height:10px;
         border-radius: 3px;
         box-shadow: 5px 5px 10px #1c1e22, -5px -5px 10px #262a2e;
      }
+
      .checkbtn{
         display:block;
      }
+
     .list {
         position: fixed;
         width:100%;
@@ -1174,22 +1165,15 @@ ul li a:hover + .brodr{
         top:80px;
         left:-100%;
         text-align: center;
-     } 
+     }
+
     .list li{
         display:block;
         margin:50px 0;
         line-height:30px;
      }
      
-    /*ul li a:hover{
-        background: none;
-        color:#0082e6;
-     }/*
-     #check:checked ~ ul{
-        left:0;
-     }*/
-
-    .container{
+     .container{
         padding-left: 20px;
         width:100%;
         flex-direction:column-reverse;
@@ -1218,7 +1202,7 @@ ul li a:hover + .brodr{
     
     .maincls{
          flex-direction: column-reverse;
-         width:90%;  
+         width:100%;  
          margin-top: 0px; 
     }
 
@@ -1264,7 +1248,7 @@ ul li a:hover + .brodr{
     }
     
     .grid-main{
-         padding-left: 20px;
+         padding-left: 10px;
         margin-top: 30px;   
     }
     .grid-main h5{
@@ -1281,7 +1265,7 @@ ul li a:hover + .brodr{
 
     .grid{
         grid-template-columns:repeat(1,1fr);
-        width:90%;  
+        width:85%;  
         height:auto;       
     }
 
@@ -1398,6 +1382,7 @@ ul li a:hover + .brodr{
         margin-top:20px;
         margin-right:50px;
         height:auto;
+        width:95%;
         
     }
     
