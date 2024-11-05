@@ -649,18 +649,21 @@ ul li a:hover + .brodr{
 }
 
 .html{
-    animation:html 2s;
+    animation:html 2s linear infinite;
     width:80%;
+    transition-duration: 0.5s;
 }
 
 .css{
-    animation:css 2s;
+    animation:css 2s linear infinite;
     width:70%;
+    transition-duration: 0.5s;
 }
 
 .js{
-    animation:js 2s;
+    animation:js 2s linear infinite;
     width:60%;
+    transition-duration: 0.5s;
 }
 
 @keyframes html{
