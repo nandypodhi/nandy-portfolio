@@ -12,17 +12,17 @@
 <body >
     <nav>
         <div class="logo-content">
-            <img src="https://rainbowit.net/html/inbio/assets/images/logo/logo.png" alt="My profile pic">
+            <img src="./Assests/Images/logo.jpeg" alt="My profile pic">
            
         </div>
        
         <ul class="list">
-            <li> <a href=""  >HOME</a> <p class="brodr"></p></li>
-            <li> <a href="">FEATURES</a><p class="brodr"></p></li>
-            <li> <a href="">PORTFOLIO</a><p class="brodr"></p></li>
-            <li> <a href="">RESUME</a><p class="brodr"></p></li>
-            <li> <a href="">BLOG</a><p class="brodr"></p></li>
-            <li> <a href="">CONTACT</a><p class="brodr"></p></li>
+            <li> <a href="">HOME</a> <p class="brodr"></p></li>
+            <li> <a href="#FEATURES">FEATURES</a><p class="brodr"></p></li>
+            <li> <a href="#PORTFOLIO">PORTFOLIO</a><p class="brodr"></p></li>
+            <li> <a href="#RESUME">RESUME</a><p class="brodr"></p></li>
+           <!--  <li> <a href="#BLOG">BLOG</a><p class="brodr"></p></li>-->
+            <li> <a href="#CONTACT">CONTACT</a><p class="brodr"></p></li>
             <button class="buttn">BUY NOW</button>
         </ul>
         <input type="checkbox" id="check">
@@ -30,7 +30,7 @@
             <i class="fas fa-bars"></i>
         </label>
     </nav>
-    <section class="container">
+    <section class="container" id="HOME">
         <main>
         <div class="descrpt">
             <h6>Welcome to my world</h6>
@@ -42,9 +42,9 @@
             <div class="social-share">
                 <span>Find with me</span>
                 <ul class="socialmedia">
-                  <li> <a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li> <a href="https://github.com/join/welcome" target="/blank"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a href="https://www.instagram.com/accounts/login/" target="/blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/" target="/blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
              </div>
 
@@ -71,7 +71,7 @@
     </div>
 
     <section class="grid-container">
-        <div class="grid-main">
+        <div class="grid-main" id="FEATURES">
             <h5>FEATURES</h5>
             <h6>What I Do</h6>
         </div>
@@ -89,7 +89,7 @@
                 <ul>
                   <li><a href="" style="color:red"><i class="font-st fa-solid fa-book-open"></i></a></li>
                   <li><a href=""> <h1>App Development</h1></a></li>
-                  <li><a href=""> <p>It uses a dictonary of over 200 Latin words,combined handful of model sentence.</p></a></li>
+                  <li><a href=""> <p>It uses a dictonary of over 200 Latin words, handful of model sentence.</p></a></li>
                   <li><a href="" style="color:red"><i class="font-st fa-solid fa-arrow-right"></i></a></li>
                 </ul>
             </div>
@@ -137,7 +137,7 @@
     </div>
     <section>
         <div class="resume-content">
-            <div class="resume-container">
+            <div class="resume-container" id="RESUME">
                     <h5 class="subtitle">3+ Years Experience</h5>
                     <h2>My Resume</h2>
             </div>
@@ -164,17 +164,69 @@
             <div class="expr">
                 <a href=""><h3>Experience</h3></a>
                 <p>CTS</p>
-                <p>FIRST DATA</p>
-                
+                <p>FIRST DATA</p> 
+            </div>
+            <div class="career">
+                <a href=""><h3>Skills</h3></a>
+                <p> Risk Mangement</p>
+                <p>Financial Skill</p> 
+                <p>Excel Skills</p> 
             </div>
         </div>
     </section>
     <div class="container-end">
+    </div>
 
+    <section>
+        
+            <div class="prt-content" id="PORTFOLIO">
+                <h5 class="subtitle">SKILLS</h5>
+                <h2>My Skills</h2>
+            </div>
+            <div class="prt">    
+            <div class="skills-area">
+                <div class="skill">
+                    <div class="skill-title"> HTML </div>
+                    <div class="skill-bar"></div>
+                    <div class="html skill-fill">
+                        <span class="skill-percent">80%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-title"> CSS </div>
+                    <div class="skill-bar"></div>
+                    <div class="css skill-fill">
+                        <span class="skill-percent">70%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-title"> JavaScript </div>
+                    <div class="skill-bar"></div>
+                    <div class="js skill-fill">
+                        <span class="skill-percent">60%</span>
+                    </div>
+                </div>
+                
+            </div>
+         <div class="circle-container">   
+            <div class="circle aqua">
+                <div class="circle-inner">85% <p>Creativity</p></div>
+            </div>
+            <div class="circle pink">
+                <div class="circle-inner">75% <p>Problem Solving</p></div>
+            </div>
+            <div class="circle gold">
+                <div class="circle-inner">70% <p> Communication</p></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="container-end">
     </div>
     <section>
         <div class="contact">
-            <div class="contact-content">
+            <div class="contact-content" id="CONTACT">
                 <h5 class="subtitle">CONTACT</h5>
                 <h2>Contact With Me</h2>
             </div>
@@ -189,9 +241,9 @@
                 <p>Email: <a href="">nandhiniarthigha.com</a></p>
                 <p class="fm">Find with me</p>
                 <ul class="contact-media">
-                  <li> <a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
-                  <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li> <a href="https://github.com/join/welcome" target="/blank"><i class="fa-brands fa-github"></i></a></li>
+                  <li><a href="https://www.instagram.com/accounts/login/" target="/blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                  <li><a href="https://www.linkedin.com/" target="/blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
 
@@ -220,7 +272,7 @@
     </div>
     <section>
         <div class="footer">
-           <a href=""><img src="./Assests/Images/logo-vertical.png" alt="vertical image"></a>
+           <a href=""><img src="./Assests/Images/logo.jpeg"" alt="vertical image"></a>
             <p> @2024.All rights reserved by <a href="">Nandhini.</a></p>
         </div>
     </section> 

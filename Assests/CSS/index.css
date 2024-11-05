@@ -23,9 +23,9 @@ nav{
 }
 
 .logo-content img{
-    height: auto;
-    max-width:100%;      
-    opacity:0.3;
+    height: 150px;
+    width:500px;      
+    opacity:0.5;
     padding:50px;
     margin-top:10px; 
 }
@@ -348,18 +348,18 @@ ul li a:hover + .brodr{
 .grid-feat{
     width:90%;
     height:auto;
-     padding-left: 20px;
+    padding-left: 20px;
     margin-left:100px;
     box-shadow: 10px 10px 19px #0e010aba, -10px -10px 19px #0c0d0f;
     border-radius:10px;
-    justify-items: left;
+    justify-items: center;
+   padding-bottom:20px;
     
 }
 
 .grid-feat:hover{
     transition:.5s;
     transform: translateY(-10px);
-
 }
 
 .grid-feat li{
@@ -397,7 +397,9 @@ ul li a:hover + .brodr{
 .font-st{
     font-size:30px;
     font-weight:200;
+ 
 }
+
 
 .resume-container h5{
     color:red;
@@ -424,7 +426,7 @@ ul li a:hover + .brodr{
 .edu-pref{
     display: flex;
     width:90%;
-    justify-content:space-around; 
+   justify-content: space-between;
      height:50vh; 
      padding-left:40px;  
 }
@@ -533,9 +535,208 @@ ul li a:hover + .brodr{
    font-family:  "Montserrat", sans-serif;
    color:#a0a8b3; 
    margin-top:30px;
+}
+
+.career{
+    
+    font-weight: 700;
+    width: 90%;
+    height:10px;
+    margin-top: 50px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family:  "Montserrat", sans-serif;
+    padding-left:70px;
+    text-align: c;
+}
+
+.career a{
+    text-decoration: none;
+    color:#EDEDEE;
+}
+
+.career a:hover{
+    color: red;
+    transition:0.2s;
+}
+
+.career p{
+    font-weight: 700;
+    width: 90%;
+    height:10px;
+    line-height:14px ;
+   letter-spacing: 1px;
+    font-size: 14px;
+   font-family:  "Montserrat", sans-serif;
+   color:#a0a8b3; 
+   margin-top:30px;
 
 }
 
+.prt{
+    width:90%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.prt-content h5{
+    color:red;
+    font-size: 14px;
+    font-weight: 500;  
+    letter-spacing:1px;
+    line-height: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top:90px;
+    font-family:  "Montserrat", sans-serif;
+}
+
+.prt-content h2{
+    color:#c4cfde;
+    text-align:center;
+    font-size: 40px;
+    margin-top: 7px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing:1px;
+    font-family:  "Montserrat", sans-serif;
+}
+
+.skills-area{
+    display:flex;
+    flex-direction:column;
+    padding-left:100px;
+    width:50%;
+    color:#c4cfde;
+    font-family:  "Montserrat", sans-serif;
+    margin-top:40px;
+}
+
+.skill{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.skill-title{
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.skill-bar{
+    width:100%;
+    background:rgba(255,255,255,0.6);
+    height:10px;
+    z-index:-1;
+    border-radius:100px;
+    position:absolute;
+}
+
+.skill-fill{
+    background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+    height:10px;
+    border-radius:100px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:30px;
+    overflow:hidden;
+}
+
+.skill-percent{
+    font-size:14px;
+    color:blue;
+}
+
+.html{
+    animation:html 2s;
+    width:80%;
+}
+
+.css{
+    animation:css 2s;
+    width:70%;
+}
+
+.js{
+    animation:js 2s;
+    width:60%;
+}
+
+@keyframes html{
+    from{
+        width:0%;
+
+    }
+    to{
+        width:80%;
+    }
+}
+@keyframes css{
+    from{
+        width:0%;
+
+    }
+    to{
+        width:70%;
+    }
+}
+@keyframes js{
+    from{
+        width:0%;
+
+    }
+    to{
+        width:60%;
+    }
+}
+
+.circle-container{
+    width:70%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    padding-left:150px;
+}
+.circle{
+    display:grid;
+    place-items: center;
+    width:150px;
+    height:150px;
+    margin-top:70px;
+    border-radius: 50%;
+    cursor:default;
+    background: #fff;
+}
+.circle .circle-inner{
+    display:grid;
+    place-items: center;
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    background: #1d1e22;
+    font-size:20px;
+    color:#fff;
+    
+
+}
+.circle-inner p{
+    font-size:14px;
+    font-family:"Montserrat", sans-serif;
+}
+.circle.aqua{
+    color:aqua;
+    background: conic-gradient(aqua 0 85%, #303238 85% 100%);
+}
+
+.circle.pink{
+    color:pink;
+    background: conic-gradient(pink 0 75%, #303238 75% 100%);
+}
+.circle.gold{
+    color:gold;
+    background: conic-gradient(gold 0 70%, #303238 70% 100%);
+}
 .contact-content h5{
     color:red;
     font-size: 14px;
@@ -773,14 +974,14 @@ ul li a:hover + .brodr{
   text-align:center;
   color:    #a0a8b3;
   font-family:  "Montserrat", sans-serif ;
-  margin-top: 70px;
+  margin-top: 40px;
   font-size: 14px;
-  margin-bottom:30px;
+  margin-bottom:20px;
   letter-spacing: 1px;
 }
 
 .footer p {
-    margin-top: 30px;
+    margin-top: 10px;
    
 }
 .footer a {
@@ -791,14 +992,25 @@ ul li a:hover + .brodr{
     color:red;
 }
 
+.footer img{
+    height: 100px;
+    width:300px;      
+    padding:30px;
+ }
+
 
 
 @media(max-width:1200px){
     nav{
         width:100%;
     }
-    .logo-content img {
-        padding: 10px;
+    
+    .logo-content img{
+        height: 100px;
+        width:200px;      
+        opacity:0.5;
+        padding:10px;
+        margin-top:10px;     
     }
 
     .list li{   
@@ -1001,6 +1213,57 @@ ul li a:hover + .brodr{
     
     }
 
+    .career{ 
+        width:33%;
+          margin-top: 50px;
+        font-size: 18px;
+        padding-left:20px;
+        font-weight:400;
+        
+     }
+    
+    .career p{
+        font-weight: 500;
+        line-height:12px;
+        font-size: 16px;
+        margin-top:25px;
+    
+    }
+
+    .skills-area{
+        padding-left:20px;
+        width:50%;
+        margin-top:30px;
+    }
+    
+        
+    .circle-container{
+        width:90%;
+        padding-left:50px;
+       justify-content: space-between;
+       align-items: center;
+    }
+    .circle{
+        width:120px;
+        height:120px;
+        margin-top:0px;
+        border-radius: 50%;
+    }
+    
+    .circle .circle-inner{
+      
+        width:100px;
+        height:100px;
+        font-size:12px; 
+    }
+    
+    .circle-inner p{
+        font-size:12px;
+        text-align: center;
+        overflow:hidden;
+       
+    }
+
     .contact-flex {
       
         padding-left: 20px;
@@ -1111,8 +1374,8 @@ ul li a:hover + .brodr{
         margin-top: 10px;
     }
     .bttn{
-        font-size: 16px;
-        font-weight: 400;
+        font-size: 18px;
+        font-weight: 700;
         height:40px;
     }      
     .footer{ 
@@ -1124,7 +1387,12 @@ ul li a:hover + .brodr{
     .footer p {
         margin-top: 20px; 
     }
-
+ 
+    .footer img{
+        height: 100px;
+        width:200px;      
+        padding:20px;
+     }
 }
 
 
@@ -1140,8 +1408,8 @@ ul li a:hover + .brodr{
     }
     
     .logo-content img{
-        height: auto;
-        max-width:100%;      
+        height: 70px;
+        width:200px;      
         opacity:0.3;
         padding:10px;
         margin-top:10px;     
@@ -1312,16 +1580,16 @@ ul li a:hover + .brodr{
     }
     
     .edu-pref{
-        width:100%;
-        height:35vh; 
+        width:76%;
+        height:30vh; 
         padding-left:10px;  
     }
     
     .edu{
        
         margin-top: 25px;
-        font-size: 14px;
-        padding-left:10px;
+        font-size: 12px;
+        padding-left:0px;
       
     }
   
@@ -1335,8 +1603,8 @@ ul li a:hover + .brodr{
     
     .prfskill{   
         margin-top: 25px;
-        font-size: 14px;
-        padding-left:20px;
+        font-size: 12px;
+        padding-left:10px;
     }
     
     .prfskill p{
@@ -1349,8 +1617,8 @@ ul li a:hover + .brodr{
     }  
     .expr{ 
           margin-top: 25px;
-        font-size: 14px;
-        padding-left:20px;
+        font-size: 12px;
+        padding-left:10px;
      }
     
     .expr p{
@@ -1361,6 +1629,86 @@ ul li a:hover + .brodr{
     
     }
 
+    .career{ 
+        margin-top: 25px;
+      font-size: 12px;
+      padding-left:10px;
+   }
+  
+  .career p{
+      font-weight: 300;
+      line-height:12px ;
+      font-size: 12px;
+      margin-top:25px;
+  
+  }
+
+  .prt-content h5{
+    font-weight: 600;  
+    line-height: 10px;
+    margin-top:30px;
+}
+
+.prt-content h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.skills-area{
+   
+    padding-left:10px;
+    width:100%;
+    margin-top:30px;
+}
+
+.skill-title{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.skill-bar{ 
+    height:10px;
+
+}
+
+.skill-fill{
+    
+    height:10px;
+}
+
+.skill-percent{
+    font-size:14px;
+}
+
+
+.circle-container{
+    width:40%;
+    padding-left:70px;
+    display:grid;
+    grid-template-rows: repeat(1,1fr);
+}
+.circle{
+    width:100px;
+    height:100px;
+    margin-top:20px;
+    border-radius: 50%;
+    cursor:default;
+    background: #fff;
+}
+
+.circle .circle-inner{
+  
+    width:80px;
+    height:80px;
+    font-size:10px; 
+}
+
+.circle-inner p{
+    font-size:10px;
+    text-align: center;
+    overflow:hidden;
+   
+}
     .contact-content h5{
         font-weight: 600;  
         line-height: 10px;
@@ -1466,4 +1814,10 @@ ul li a:hover + .brodr{
         margin-top: 20px; 
     }
  
+    .footer img{
+        height: 50px;
+        width:150px;      
+        padding:10px;
+     }
+    
 }
